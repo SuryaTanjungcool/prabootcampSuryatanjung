@@ -94,7 +94,7 @@
             <!-- Lampu 1 --> 
             <div class="lampu bg-1"> 
                 <p>Lampu Ruang Tamu</p> 
-                <img id="myImage1" src="../img/pic_bulboff.gif"><br>
+                <img id="myImage1" src="../pra bootcamp/img/pic_bulboff.gif"><br>
                 <button onclick="nyalakanLampu('myImage1', 'status1', 'timerId1')">Nyalakan Lampu</button>
                 <p id="status1">Lampu Mati</p> 
                 <p id="timerId1"></p> <!-- Menambahkan elemen untuk timer -->
@@ -103,7 +103,7 @@
             <!-- Lampu 2 --> 
             <div class="lampu bg-2"> 
                 <p>Lampu Kamar Mandi</p> 
-                <img id="myImage2" src="../img/pic_bulboff.gif"> <br>
+                <img id="myImage2" src="../pra bootcamp/img/pic_bulboff.gif"> <br>
                 <button onclick="nyalakanLampu('myImage2', 'status2', 'timerId2')">Nyalakan Lampu</button> 
                 <p id="status2">Lampu Mati</p> 
                 <p id="timerId2"></p> <!-- Menambahkan elemen untuk timer -->
@@ -112,7 +112,7 @@
             <!-- Lampu 3 --> 
             <div class="lampu bg-3"> 
                 <p>Lampu Ruang Tidur</p> 
-                <img id="myImage3" src="../img/pic_bulboff.gif"><br>
+                <img id="myImage3" src="../pra bootcamp/img/pic_bulboff.gif"><br>
                 <button onclick="nyalakanLampu('myImage3', 'status3', 'timerId3')">Nyalakan Lampu</button>
                 <p id="status3">Lampu Mati</p> 
                 <p id="timerId3"></p> <!-- Menambahkan elemen untuk timer -->
@@ -121,7 +121,7 @@
             <!-- Lampu 4 --> 
             <div class="lampu bg-4"> 
                 <p>Lampu Gudang</p> 
-                <img id="myImage4" src="../img/pic_bulboff.gif"><br>
+                <img id="myImage4" src="../pra bootcamp/img/pic_bulboff.gif"><br>
                 <button onclick="nyalakanLampu('myImage4', 'status4', 'timerId4')">Nyalakan Lampu</button>
                 <p id="status4">Lampu Mati</p> 
                 <p id="timerId4"></p> <!-- Menambahkan elemen untuk timer -->
@@ -130,7 +130,7 @@
 
         <script>
             function nyalakanLampu(imgId, statusId, timerId) {
-                document.getElementById(imgId).src = "../img/pic_bulbon.gif";
+                document.getElementById(imgId).src = "../pra bootcamp/img/pic_bulbon.gif";
                 document.getElementById(statusId).innerText = "Lampu Menyala";
 
                 let countdown = 3;
@@ -143,7 +143,7 @@
                     } else {
                         clearInterval(timerInterval);
                         document.getElementById(timerId).innerText = "";
-                        document.getElementById(imgId).src = "../img/pic_bulboff.gif";
+                        document.getElementById(imgId).src = "../pra bootcamp/img/pic_bulboff.gif";
                         document.getElementById(statusId).innerText = "Lampu Mati";
                     }
                 }, 1000);
